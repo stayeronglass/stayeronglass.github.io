@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="post">
+    <header>
+        <a href="/" class="backLink">&laquo; Back to article overview.</a>
+        <h1>{{ page.title }}</h1>
+        <time datetime="{{ page.date | date: '%Y-%m-%d' }}" pubdate>
+            {{ page.date | date: '%d. %B %Y' }}
+        </time>
+    </header>
+    <section>
+        {{ content }}
+    </section>
+    <footer>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+
+        </script>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+</section>
